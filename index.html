@@ -31,8 +31,27 @@
         <p>Let's do this!</p>
       </div>
       <div class="forms">
-        <div class="formL"></div>
-        <div class="formR"> </div>
+        <div class="formL">
+          <label for="first_name">FIRST NAME</label>
+          <input type="text" id="first_name" name="first_name" required>
+          <span class="error-noinput">This must be filled!</span>
+          <label for="email">EMAIL</label>          
+          <input type="text" id="email" name="email">          
+          <label for="password">PASSWORD</label>
+          <input type="text" id="password" name="password" pattern ="(?=.*\d).{8,}">
+          <span class="error-noinput">Password must contain number and at least 8 characters long</span>
+        </div>
+        <div class="formR">
+          <label for="last_name">LAST NAME</label>
+          <input type="text" id="last_name" name="last_name" required>
+          <span class="error-noinput">This must be filled!</span>
+          <label for="phone_number">PHONE NUMBER</label>
+          <input type="text" id="phone_number" name="phone_number" required>
+          <span class="error-noinput">This must be filled!</span>
+          <label for="confirm_pw">CONFIRM PASSWORD</label name="password" >
+          <input type="text" id="confirm_pw" pattern ="(?=.*\d).{8,}">
+          <span class="error-noinput">Password must contain number and at least 8 characters long</span>
+        </div>
       </div>
     </div>
     <div class="buttons">
